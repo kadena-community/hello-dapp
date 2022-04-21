@@ -12,7 +12,7 @@
     const host = `https://api.chainweb.com/chainweb/0.0/mainnet01/chain/0/pact`;
     var creationTime = () => Math.round((new Date).getTime()/1000)-15;
     const GAS_PRICE = 0.0000001;
-    const HIGH_GAS_LIMIT = 60000; // use for local read.
+    const HIGH_GAS_LIMIT = 100000; // use for local read.
     const GAS_LIMIT = 10000;
     const getLastTen = async (server) => {
       const res = await Pact.fetch.local({
